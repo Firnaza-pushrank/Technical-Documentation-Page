@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 290px;
+    font-family: "Poppins", "sans-serif";
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid white;
+    display: block;
+    background-color: #343434;
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar ul li {
+    border-top: 1px solid white;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-bottom: 110px;
+    margin-left: 310px;
+}
+
+.main-section {
+    display: block;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0;
+    color: black;
+}
+
+.main-section articel {
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+article p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+article ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    list-style: disc;
+    padding-inline-start: 40px;
+}
+
+article ul li {
+    margin: 15px 0 0 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-wrap: normal;
+    word-break: normal;
+    line-height: 2;
+    background-color: #343434;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+
+    /* For mobile phones: */
+    #navbar header {
+        -webkit-box-shadow: 0 8px 6px -5px #777;
+        -moz-box-shadow: 0 8px 6px -5px #777;
+        box-shadow: 0 8px 6px -5px #777;
+    }
+
+    #navbar ul {
+
+        height: 207px;
+    }
+
+    #navbar {
+        background-color: #343434;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 276px;
+        border: none;
+        z-index: 1;
+        -webkit-box-shadow: inset 0px -3px 5px white;
+        -moz-box-shadow: inset 0px -3px 5px white;
+        box-shadow: inset 0px -3px 5px white;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
